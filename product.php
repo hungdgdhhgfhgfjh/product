@@ -1,21 +1,27 @@
 <?php
-class Product{
-    public $name = "";
+class Product
+{
+    public $name;
     public float $price;
-    public function ___construct($nam = null ,$price = 0) {
+    public function __construct($name = null, $price = 0)
+    {
         $this->name = $name;
         $this->price = $price;
     }
-    public function setName($name) {
+    public function setName($name)
+    {
         $this->name = $name;
     }
-    public function getName() {
-           return $this->name;
+    public function getName()
+    {
+        return $this->name;
     }
-    public function setPrice($price) {
+    public function setPrice($price)
+    {
         $this->price = $price;
     }
-    public function getPrice()  {
+    public function getPrice()
+    {
         return  $this->price;
     }
 }

@@ -1,10 +1,23 @@
 <?php
-class ProductManeger{
-    private $products;
-    public function __construrt($products) {
-        $this->products = [];
+
+class ProductManeger
+{
+    private $products = [];
+    public function __construrt()
+    {
+        // 
     }
-    public function add($products) {
-        $this->products[]=$products;
+    public function add($item)
+    {
+        array_push($this->products, $item);
+    }
+    public function getProducts()
+    {
+        return $this->products;
     }
 }
+
+
+
+
+
